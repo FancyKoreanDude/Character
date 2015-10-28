@@ -17,11 +17,11 @@ import java.awt.event.MouseEvent;
 class CharacterEnvironment extends Environment {
     
     
-    private JungShin myJungShin, myJungShinSmall;
+    private Human myHuman, myHumanSmall;
 
     public CharacterEnvironment() {
-        myJungShin = new JungShin(100, 100, 200, 100);
-        myJungShinSmall = new JungShin(300, 100, 50, 25);
+        myHuman = new Human(100, 100, 200, 100);
+        myHumanSmall = new Human(300, 100, 50, 25);
     }
 
     @Override
@@ -46,12 +46,12 @@ class CharacterEnvironment extends Environment {
 
     @Override
     public void paintEnvironment(Graphics graphics) {
-        if (myJungShin != null){
-            myJungShin.draw(graphics);
+        if (myHuman != null){
+            myHuman.draw(graphics);
         }
         
-        if (myJungShinSmall != null){
-            myJungShinSmall.draw(graphics);
+        if (myHumanSmall != null){
+            myHumanSmall.draw(graphics);
         }
     }
     
