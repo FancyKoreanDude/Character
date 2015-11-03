@@ -19,21 +19,40 @@ public class Human {
     public void draw(Graphics graphics){
         graphics.drawRect(x, y, width, height);
         
-        graphics.drawOval(x, y, width, height);
+        
+        graphics.setColor(Color.black);
         graphics.drawOval(100, 100, 100, 100);
-        graphics.setColor(new Color(255,229,204));
-        graphics.fillOval(100, 100, 100, 100);
+        graphics.drawOval(100, 123, 45, 45);
+        graphics.drawOval(155, 123, 45, 45);
         graphics.setColor(Color.black);
-        graphics.drawOval(110, 130, 34, 34);
-        graphics.setColor(Color.white);
-        graphics.fillOval(110, 130, 34, 34);
-        graphics.setColor(Color.black);
-        graphics.fillOval(116, 136, 22, 22);
-        graphics.drawOval(156, 130, 34, 34);
-        graphics.setColor(Color.white);
-        graphics.fillOval(156, 130, 34, 34);
-        graphics.setColor(Color.black);
-        graphics.fillOval(162, 136, 22, 22);
+        graphics.fillOval(117, 140, 10, 10);
+        graphics.fillOval(173, 140, 10, 10);
+        graphics.drawLine(130, 178, 170, 178);
+        graphics.drawArc(135, 173, 10, 10, 180, 180);
+        graphics.drawArc(145, 173, 10, 10, 180, 180);
+        graphics.drawArc(155, 173, 10, 10, 180, 180);
+        graphics.drawArc(130, 198, 10, 50, 90, 180);
+        graphics.drawArc(160, 198, 10, 50, 270, 180);
+        graphics.drawLine(135, 210, 135, 255);
+        graphics.drawLine(165, 210, 165, 255);
+        graphics.drawArc(135, 230, 15, 50, 180, 180);
+        graphics.drawArc(150, 230, 15, 50, 180, 180);
+        
+//        graphics.drawOval(x, y, width, height);
+//        graphics.drawOval(100, 100, 100, 100);
+//        graphics.setColor(new Color(255,229,204));
+//        graphics.fillOval(100, 100, 100, 100);
+//        graphics.setColor(Color.black);
+//        graphics.drawOval(110, 130, 34, 34);
+//        graphics.setColor(Color.white);
+//        graphics.fillOval(110, 130, 34, 34);
+//        graphics.setColor(Color.black);
+//        graphics.fillOval(116, 136, 22, 22);
+//        graphics.drawOval(156, 130, 34, 34);
+//        graphics.setColor(Color.white);
+//        graphics.fillOval(156, 130, 34, 34);
+//        graphics.setColor(Color.black);
+//        graphics.fillOval(162, 136, 22, 22);
 //        graphics.drawLine(150, 158, 150, 163);
 //        graphics.drawLine(150, 163, 146, 163);
 //        graphics.drawLine(150, 168, 146, 163);
@@ -54,9 +73,9 @@ public class Human {
 //        
 //        graphics.fillPolygon(xS, yS, 3);
         
-        if (design) {
-            grid.paintComponent(graphics);
-        }
+//        if (design) {
+//            grid.paintComponent(graphics);
+//        }
     }
     
     public Human(int x, int y, int height, int width){
@@ -65,9 +84,9 @@ public class Human {
         this.height = height;
         this.width = width;
         
-        grid = new Grid(ROWS, COLUMNS, width / ROWS, height / COLUMNS, new Point(x, y), Color.BLUE);
-        
-        design = true;
+//        grid = new Grid(ROWS, COLUMNS, width / ROWS, height / COLUMNS, new Point(x, y), Color.BLUE);
+//        
+//        design = true;
     }
     
     
@@ -77,9 +96,9 @@ public class Human {
     private int width;
     
     
-    private Grid grid;
-    private static final int ROWS = 10;
-    private static final int COLUMNS = 20;
-    
-    private boolean design = false;
+//    private Grid grid;
+//    private static final int ROWS = 10;
+//    private static final int COLUMNS = 20;
+//    
+//    private boolean design = false;
 }
